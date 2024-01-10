@@ -127,7 +127,7 @@ const formElem = document.querySelector("#form");
 formElem.onsubmit = async (e) => {
     e.preventDefault();
 
-    let response = await fetch('https://formcarry.com/s/i9EtQjA3zV1', {
+    let response = await fetch('https://formcarry.com/s/GL0myYCRBX', {
         method: 'POST',
         body: new FormData(formElem)
     });

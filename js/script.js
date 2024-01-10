@@ -19,7 +19,34 @@ $(document).ready(function () {
         $('.plans__card-business').removeClass('business-scale');
     });
 
+     // Добавление фото
+    
+    
+    $('.cases__width-780').ready(function () {
+        $('.showImages').click(function () {
 
+            $('.hidden').css('display', 'block');
+            
+
+            $(this).hide();
+            
+
+            $('.hide-photos').show();
+        });
+    
+        $('.hide-photos').click(function () {
+
+            $('.hidden').css('display', 'none');
+            
+            $('.showImages').show();
+            
+            $(this).hide();
+        });
+    });
+
+    
+    
+    
     // ОТЗЫВЫ
 
     $('.reviews__slider').on(`init reInit`, function (event, slick) {
@@ -100,10 +127,12 @@ const formElem = document.querySelector("#form");
 formElem.onsubmit = async (e) => {
     e.preventDefault();
 
-    let response = await fetch('https://formcarry.com/s/GL0myYCRBX', {
+    let response = await fetch('https://formcarry.com/s/i9EtQjA3zV1', {
         method: 'POST',
         body: new FormData(formElem)
     });
     formElem.reset();
     alert("Данные отправлены!");
 }
+
+  

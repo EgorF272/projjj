@@ -42,7 +42,7 @@ var LikeButton = function (_React$Component) {
               } },
             React.createElement(
               'form',
-              { action: 'https://formcarry.com/s/i9EtQjA3zV1', method: 'POST', acceptCharset: 'UTF-8', id: 'form' },
+              { action: 'https://formcarry.com/s/GL0myYCRBX', method: 'POST', acceptCharset: 'UTF-8', id: 'form' },
               React.createElement(
                 'div',
                 null,

@@ -1658,7 +1658,7 @@ footer .footer__text {
   padding-top: 68px;
   padding-bottom: 20px;
 }
-
+.faq-enum{margin: 60px;}
 .faq-enum h3 {
   position: relative;
   cursor: pointer;

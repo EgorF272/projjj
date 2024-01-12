@@ -134,5 +134,19 @@ formElem.onsubmit = async (e) => {
     formElem.reset();
     alert("Данные отправлены!");
 }
-
+// FAQ
+$(".faq-enum div:first").addClass("active");
+  $(".faq-enum p:not(:first)").hide();
+  $(".faq-enum h3").click(function () {
+    if (!$(this).parent().hasClass("active")) {
+      $(".faq-enum p:visible").slideUp("fast");
+      $(this).next("p").slideToggle("fast");
+      $(".faq-enum div").removeClass("active");
+      $(this).parent().toggleClass("active");
+    }
+    else {
+      $(".faq-enum p:visible").slideUp("fast");
+      $(".faq-enum div").removeClass("active");
+    }
+  });
   
